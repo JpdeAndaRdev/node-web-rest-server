@@ -18,6 +18,10 @@ export class TodoRoutes {
 
         //* PUT
         router.put('/:id', todoController.updateTodo);
+
+        //* DELETE
+        router.delete('/:id', todoController.deleteTodo);
+        
         return router;
     }
 }
